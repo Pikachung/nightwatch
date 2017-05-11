@@ -1,0 +1,28 @@
+{
+  "name": "nightwatch_AutoTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pikachung/nightwatch.git"
+  },
+  "author": "dchung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pikachung/nightwatch/issues"
+  },
+  "homepage": "https://github.com/Pikachung/nightwatch#readme",
+  "dependencies": {
+    "chrome-driver-standalone": "^2.28.0",
+    "nightwatch": "^0.9.15",
+    "selenium-server-standalone-jar": "^3.4.0"
+  }
+}

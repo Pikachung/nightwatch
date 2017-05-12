@@ -3,7 +3,8 @@ var chromeDriver = require('chrome-driver-standalone');
 
 var config = {
   "custom_commands_path": "command",
-  "page_objects_path": "page",
+  "page_objects_path": "pages",
+  "data_path": "data",
   "src_folders": ["tests"],
   "selenium": {
     "start_process": true,

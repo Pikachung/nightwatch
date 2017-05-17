@@ -1,8 +1,12 @@
+'use strict'
+
+require('babel/register')
+
 var selenium = require('selenium-server-standalone-jar');
 var chromeDriver = require('chrome-driver-standalone');
 
 var config = {
-  baseUrl: process.env.baseUrl || 'https://dev-app.netbase.com',
+  //baseUrl: process.env.baseUrl || 'https://dev-app.netbase.com',
   "custom_commands_path": "command",
   "page_objects_path": "pages",
   "data_path": "data",
@@ -16,6 +20,7 @@ var config = {
   },
   "test_settings": {
     "default": {
+      "launch_url": "https://dev-app.netbase.com",
       "globals": {
         "waitForConditionTimeout": 30000
       },

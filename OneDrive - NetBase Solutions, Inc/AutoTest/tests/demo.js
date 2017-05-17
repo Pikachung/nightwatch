@@ -1,11 +1,17 @@
+'use strict'
+import {basicUser as user} from '../data/users.data'
+
 module.exports = {
   
-  'Demo test Google' : function (browser) {
+  'Demo test NB' : function (browser) {
       
       var loginPage = browser.page.login()
-      loginPage.navigate('http://inttest.netbase.com',"");
+      loginPage.navigate()
+               .signInAsAdmin(user.username,user.password);
 
-      browser.url('http://inttest.netbase.com')
+      browser.end();
+
+      /*browser.url('http://inttest.netbase.com')
       browser.waitForElementVisible('body', 1000)
       browser.setValue('input[name=j_username]', 'itflux@regression.com')
       browser.setValue('input[name=j_password]', '@gt_1627')
@@ -13,7 +19,7 @@ module.exports = {
       .pause(1000)
       .waitForElementVisible('body', 1000)
       //.assert.containsText('#main', 'Night Watch')
-      .end();
+      .end();*/
   },
   'Demo test Google2' : function (browser) {
     browser

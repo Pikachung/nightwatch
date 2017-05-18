@@ -2,7 +2,7 @@
   "name": "nightwatch_AutoTest",
   "version": "1.0.0",
   "description": "",
-  "main": "nightwatch.conf.js",
+  "main": "tests/nightwatch.conf.js",
   "directories": {
     "test": "tests"
   },
